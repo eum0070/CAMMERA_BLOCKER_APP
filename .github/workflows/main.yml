@@ -16,3 +16,5 @@ jobs:
         with:
           api-url: ${{ secrets.FIVEGUYS_API_URL }}
           deploy-on-risk: "false"
+          dependency-files: |
+            camera-blocker-backend/package.json:package.json:npm
