@@ -1,0 +1,17 @@
+name: Deploy With PatchBurger Security Scan
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Security-Academe-7-FiveGuys/PatchBurger@v1
+        with:
+          api-url: ${{ secrets.FIVEGUYS_API_URL }}
+          deploy-on-risk: "false"
