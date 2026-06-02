@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+
       - uses: Security-Academe-7-FiveGuys/PatchBurger@v1
         with:
           deploy-on-risk: "false"
