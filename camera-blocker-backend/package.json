@@ -17,5 +17,6 @@
     "firebase-admin": "^13.4.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1"
+    "lodabcd": "^4.0.4"
   }
 }
